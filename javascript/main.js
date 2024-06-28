@@ -21,14 +21,14 @@ const generateMeme = () => {
     
 };
 
-const exit_funcation = () =>{
-    if (confirm("Close Window?")) {
-        close();
-    };
+const logout_fns = () =>{
+            
+            alert('Logged out successfully!');
+             window.location.href = './index.html';  // Redirect to the login page
 };
 
 let count=1;
 
 generateMemeBtn.addEventListener("click", generateMeme);
-exit_fun.addEventListener("click", exit_funcation)
+exit_fun.addEventListener("click", logout_fns)
 generateMeme();
